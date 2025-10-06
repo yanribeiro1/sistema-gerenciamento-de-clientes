@@ -1,0 +1,65 @@
+<div class="form-container">
+    <div class="form-header">
+        <h2 class="form-title">
+            <mat-icon class="title-icon">person_add</mat-icon>
+            {{ cliente().id ? 'Editar Cliente' : 'Novo Cliente' }}
+        </h2>
+        <p class="form-subtitle">Preencha os dados do cliente</p>
+    </div>
+
+    <form (ngSubmit)="save()" class="cliente-form">
+        <div class="form-card mat-elevation-z2">
+            <div class="form-section">
+                <h3 class="section-title">Informações Básicas</h3>
+                
+                <mat-form-field appearance="outline" class="form-field">
+                    <mat-label>Nome Completo</mat-label>
+                    <input matInput 
+                           [(ngModel)]="cliente().nome" 
+                           name="nome" 
+                           required 
+                           placeholder="Digite o nome completo"
+                           autocomplete="name" />
+                    <mat-icon matPrefix class="field-icon">person</mat-icon>
+                    <mat-hint>Nome como aparecerá no sistema</mat-hint>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" class="form-field">
+                    <mat-label>E-mail</mat-label>
+                    <input matInput 
+                           [(ngModel)]="cliente().email" 
+                           name="email" 
+                           type="email"
+                           required 
+                           placeholder="exemplo@email.com"
+                           autocomplete="email" />
+                    <mat-icon matPrefix class="field-icon">email</mat-icon>
+                    <mat-hint>Será usado para notificações</mat-hint>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" class="form-field">
+                    <mat-label>Telefone</mat-label>
+                    <input matInput 
+                           [(ngModel)]="cliente().telefone" 
+                           name="telefone" 
+                           required 
+                           placeholder="(00) 00000-0000"
+                           autocomplete="tel" />
+                    <mat-icon matPrefix class="field-icon">phone</mat-icon>
+                    <mat-hint>Incluir DDD</mat-hint>
+                </mat-form-field>
+            </div>
+
+            <div class="form-actions">
+                <button mat-stroked-button type="button" class="btn-cancel" (click)="cancel()">
+                    <mat-icon>close</mat-icon>
+                    Cancelar
+                </button>
+                <button mat-raised-button color="primary" type="submit" class="btn-save">
+                    <mat-icon>save</mat-icon>
+                    Salvar Cliente
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
