@@ -1,13 +1,21 @@
 Sistema de Gerenciamento de Clientes
 Sistema full-stack para gerenciamento de clientes com Node.js/Express, Angular 20 e Supabase.
+
+
+
 🚀 Tecnologias
 Backend: Node.js, Express, Supabase, CORS, dotenv
 Frontend: Angular 20, Angular Material, TypeScript, RxJS
+
+
+
 📦 Pré-requisitos
 
 Node.js 18+
 Angular CLI 20
 Conta no Supabase
+
+
 
 💾 Instalação
 Backend
@@ -45,6 +53,9 @@ Frontend:
 cd frontend
 ng serve
 Aplicação: http://localhost:4200
+
+
+
 🔌 API Endpoints
 Base URL: http://localhost:3000/api/clientes
 
