@@ -58,7 +58,7 @@ DELETE /:id - Deletar cliente
 
 Tela inicial do sistema:
 
-![Tela Inicial](screenshots/tela-inicial.png)
+![Tela Inicial](screenshots/tela-clientes.png)
 
 Adicionar cliente:
 
