@@ -54,16 +54,4 @@ POST / - Criar cliente
 PUT /:id - Atualizar cliente
 DELETE /:id - Deletar cliente
 
-📁 Estrutura
-projeto/
-├── backend/
-│   ├── controllers/cliente.controller.js
-│   ├── services/cliente.service.js
-│   ├── routes/cliente.routes.js
-│   ├── db/supabase.js
-│   ├── app.js
-│   ├── server.js
-│   └── .env
-└── frontend/
-    ├── src/app/
 📸 Screenshots
